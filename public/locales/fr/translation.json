@@ -1,0 +1,304 @@
+{
+    "Common": {
+        "OK": "Ok",
+        "cancel": "Abandonner",
+        "or": "ou",
+        "user": "Utilisateur",
+        "email": "E-mail de l'utilisateur",
+        "desc": "Description",
+        "password": "Mot de passe",
+        "passwordPoliciy" : "Au moins huit caratères dont [ a-z ] [ A-Z ] [ 0-9 ] [ !@#$%^* ]",
+        "profile" : "Profile",
+        "name": "Nom",
+        "filter": "Rechercher...",
+        "loading": "Chargement...",
+        "GoHome": "Acceuil",
+        "apiVersion": "Api-Version",
+        "unavaible" : "Indisponbile",
+        "date": "Date",
+        "function": "Fonction",
+        "type": "Type",
+        "action": "Action",
+        "table": "Table",
+        "itemId": "Identifiant",
+        "changes": "Modifications",
+        "profiles": {
+            "admin": "Administrateur",
+            "user-view": "Utilisateur, peut voir",
+            "user-del-tag": "Utilisateur, peut effacer Images",
+            "user-adm-reg": "Utilisateur, peut modifier Registre"
+        },
+        "errors": {
+            "identification": "Erreur d'identification",
+            "CONNECTION_REFUSED": "Ce site est inaccessible: {{url}}",
+            "SUCESS_CONNECTION_OK": "Ce site {{apiVersion}} est accessible: {{url}}",
+            "delete": "Erreur de suppression...",
+            "unavaible": "L'information n'est pas disponible"
+        }
+    },
+    "FlyingAlert": {
+        "danger": "Erreur",
+        "warning": "Attention",
+        "info": "Information",
+        "success": "Ok",
+        "status": {
+            "Unauthorized": "Vous devez vous reconnecter!",
+            "Forbidden": "L'utilisateur n'a pas les droits",
+            "Conflict": "Un élément avec le même nom existe déjà",
+            "InternalServerError": "Erreur interne"
+        }
+    },
+    "DialogAbout": {
+        "licence": "Licence"
+    },
+    "DialogGtu": {
+        "gtu": "Conditions générales d'utilisation"
+    },
+    "ForgottenPassword": {
+        "discalmer": "Quelle mauvais idée {{email}}, perdre son mot de passe!",
+        "toChangePassword": "Pour changer de mot de passe, veuillez vous identifier",
+        "createNewRegistry": "créez un nouvel espace pour votre Registre.",
+        "connectWithPassword": "Se connecter avec mot de passe",
+        "sendEmail": "Envoyer un email"
+    },
+    "Login": {
+        "toAccesWorkspace": "Pour accéder à votre espace, veuillez vous connecter",
+        "createNewRegistry": "créez un nouvel espace pour votre Registre.",
+        "forgottenPassword": "Mot de passe oublié ?",
+        "connect": "Se connecter",
+        "logout" : "Se déconnecter",
+        "signedAs": "Connecté :",
+        "profile" : "Profile :",
+        "manageUsers": "Gestion des utilisateurs"
+    },
+    "NewRegistry": {
+        "alreadyAnAccount" : "Vous avez déjà un compte ?",
+        "connectYourself": "Connectez-vous",
+        "createNewRegistry": "Créez un nouvel espace pour votre Registre",
+        "newUser": "Nouvel utilisateur",
+        "iAgree": "J'accepte les",
+        "gtu": "conditions générales d'utilisation",
+        "createRegistry": "Créer un nouveau Registre"
+    },
+    "RegistryEntity": {
+        "ociRegistry": "Registre OCI",
+        "registry": {
+            "name": "Nom",
+            "namePoliciy": "[a-z, 0-9 ] ou '-', doit commencer et se terminer par [a-z]",
+            "type": "Type",
+            "url": "Url du service web",
+            "gnUrl": "General newtwork URL",
+            "iconUrl": "Url d'une icône",
+            "path" : "Chemin (optionel)",
+            "excludePaths": "Chemins à exclure (optionel)",
+            "timeout": "Attente en ms",
+            "user": "Identifiant d'accés au Registre (optionel)",
+            "checkUrl": "Tester"
+        }
+    },
+    "LanguageSelect": {
+        "title": "Langue de l'application",
+        "de": "Allemand",
+        "en": "Anglais",
+        "es": "Espagnol",
+        "fr": "Français",
+        "it": "Italien"
+    },
+    "Home": {
+        "title": "Liste des Registres",
+        "registry": {
+            "name": "Nom",
+            "type": "Type",
+            "url": "Url du service web",
+            "path": "Chemin",
+            "user": "Nom de l'utilisateur",
+            "details": "Détails",
+            "checkUrl": "Tester l'url",
+            "edit": "Modifier",
+            "upload": " Ajouter une image",
+            "clone": "Copier le registre",
+            "delete": "Supprimer le registre"
+        }
+    },
+    "Registry": {
+        "title": "Catalogue",
+        "excludePaths": "Exclure",
+        "tags": "Tags",
+        "url": "Url",
+        "checkUrl": "Tester l'url",
+        "type": "Type",
+        "update": "Modifier les paramètres",
+        "refresh": "Rafraichir le catalogue"
+    },
+    "CreateRegistry": {
+        "title": "Ajouter un Registre"
+    },
+    "EditRegistry": {
+        "title": "Modifier le dépôt"
+    },
+    "Repository": {
+        "title": "Dépôt",
+        "config": "Configuration",
+        "path": "Chemin",
+        "tag": "Etiquette",
+        "checkSignature": "Signature",
+        "howToDownload": "Télécharger l'image",
+        "howToRun": "Exécuter",
+        "manifest": "Inspecter le manifest",
+        "delete": "Supprimer l'image",
+        "refresh": "Rafraichir la liste des images du dépôt",
+        "contentDigest": "Digest",
+        "type": "Type de contenu",
+        "description": "Description",
+        "architecture": "Architecture",
+        "os": "Os",
+        "size": "Taille",
+        "rating": "Notation",
+        "created": "Crée le",
+        "signature": "Signature",
+        "fromImage": "Image source",
+        "licenses": "Licenses",
+        "length": "Taille"
+    },
+    "EditRepository": {
+        "title": "Modifier le dépôt"
+    },
+    "DialogManifest" : {
+        "title": "Manifest de l'image",
+        "contentType": "Type de contenu",
+        "digest": "Digest",
+        "schemaVersion": "Schema Version",
+        "configTag":"Etiquette",
+        "architecture" : "Architecture",
+        "configMediaType":"Type de configuration"
+    },
+    "DialogImageSupport" : {
+        "path" : "Chemin (optionel)",
+        "image": "Nom du répertoire",
+        "tag": "Etiquette"
+    },
+    "DialogCheckSignature": {
+        "title": "Contrôler la signature de l'image",
+        "docker-login": "Connexion Docker",
+        "docker-pull": "Uploader l'image en la contrôlant",
+        "docker-trust": "Valider la signature de l'image",
+        "cosign-login": "Connexion Cosign",
+        "cosign-verify": "Vérifer la signature de l'image"
+    },
+    "DialogPullImage" : {
+        "title": "Télécharger l'image",
+        "docker-login": "Connexion Docker",
+        "docker": "Télécharger cette image avec Docker :",
+        "kubectl": "Déployer cette image avec kubectl sous Kubernetes :",
+        "kubectl-values": "Fichier values.yaml",
+        "curl-catalog": "Explorer le catalog du Registre avec curl",
+        "curl-tags": "Visualiser les tags du Repository",
+        "helm-login": "Connexion au repo Helm",
+        "helm": "Déployer ce chart avec Helm",
+        "helm-values": "Fichier values.yaml"
+    },
+    "DialogPushImage" : {
+        "title": "Ajouter une image",
+        "docker-login": "Connexion Docker",
+        "docker": "Uploader une image avec Docker",
+        "helm-login": "Connexion au repo Helm",
+        "helm": "Uploader un chart avec Helm",
+        "helm-values": "Fichier values.yaml"
+    },
+    "DialogRunImage": {
+        "title": "Exécution interactive de l'image",
+        "docker-login": "Connexion Docker",
+        "docker-pull": "Uploader l'image",
+        "docker-run": "Exécution interactive en demarrant le shell de l'image"
+    },
+    "Tag": {
+        "docker": {
+            "tag": "image",
+            "the_tag": "l'image"
+        },
+        "helm": {
+            "tag": "chart",
+            "the_tag": "le chart"
+        },
+        "oci": {
+            "tag": "étiquette",
+            "the_tag": "l'étiquette"
+        }
+    },
+    "ConfirmDeleteTag": {
+        "title": "<strong>Etes-vous sûr de vouloir supprimer {{the_tag}} ?</strong><br/><br/>Attention, {{the_tag}} sera définitivement supprimée du Registre par le service de son site web.",
+        "tag": "Confirmez la suppression de {{this_tag}}, en saisissant <strong>{{tag_name}}</strong>"
+    },
+    "ConfirmDeleteRegistry": {
+        "title": "<strong>Etes-vous sûr de vouloir supprimer le Registre ?</strong><br/><br/>Seule sa présence dans la liste des registres de l'utlisateur sera supprimée, le site web du service n'est pas impacté.",
+        "registry": "Confirmez la suppression du Registre {{type}} <i>{{url}}</i>, en saisissant <strong>{{name}}</strong>"
+    },
+    "Account": {
+        "edit": "Modifier le compte",
+        "changePassword": "Changer le mot de passe",
+        "delete": "Supprimer le compte"
+    },
+    "User": {
+        "title": "Gestion des utilisateurs",
+        "create": "Créer un nouvel utilisateur",
+        "edit": "Modifier l'utilisateur",
+        "delete": "Supprimer l'utilisateur",
+        "registries": "Registres",
+        "me": "<i>( moi )</i>"
+    },
+    "Trace": {
+        "title" : "Historique des actions",
+        "detail": "Détail des modifications"
+    },
+    "ConfirmDeleteUser": {
+        "title": "<strong>Supprimer l'utilisateur en oubliant son e-mail ?</strong><br/><br/>La trace des actions effectuées par l'utilisateur sont conservés mais on ne peut plus identifier leur auteur.<br/>Re-créer un nouveau compte avec le même e-mail ne permetra pas de les retrouver.",
+        "email": "Confirmer la suppression du compte en saisissant <strong>{{email}}</strong>"
+    },
+    "EditUser": {
+        "title": "Modifier les informations de l'utilisateur"
+    },
+    "CreateUser": {
+        "title": "Créer un nouvel utilisateur"
+    },
+    "UserForm": {
+        "newPassword": "Nouveau mot de passe",
+        "awaitChangePassword":"L'utilisateur doit changer de mot de passe"
+    },
+    "ConfirmForgetMe": {
+        "title": "<strong>Supprimer votre compte en oubliant l'e-mail ?</strong><br/><br/>Les Registres et la trace des actions que vous avez effectuées sont conservés mais on ne peut plus identifier leur auteur.<br/>Re-créer un nouveau compte avec le même e-mail ne permetra pas de les retrouver.",
+        "email": "Confirmer la suppression de votre compte en saisissant <strong>{{email}}</strong>"
+    },
+    "UserRegisty": {
+        "title": "Registres de l'utilisateur : {{email}}",
+        "remove": "Supprimer l'accès",
+        "add": "Ajouter le registre",
+        "cannotDeleteAll": "Ne supprimez pas tous les accès. Supprimez l'utilisateur",
+        "noRight": "Non authorisé"
+    },
+    "Signup": {
+        "success": "Nouvel espace crée, vous devez vous connecter avec {{email}}"
+    },
+    "ChangePassword": {
+        "title": "Nouveau mot de passe",
+        "explain": "Afin de valider l'utilisation de votre compte <br/> vous devez saisir un <strong>nouveau mot de passe.</strong>",
+        "error": "Vous devez saisir un nouveau mot de passe",
+        "success": "Utilisateur validé, vous devez vous reconnecter."
+    },
+    "AwaitActivation": {
+        "title": "Activation du compte",
+        "explain": "Pour utiliser votre espace vous devez activer le compte que avez créer.<br/>Pour cela <strong>scannez le QrCode</strong>, ci-dessous, avec votre smart phone.<br/> Puis, <strong>saisir le code d'activation</strong> qu'il affichera en dessous.",
+        "code": "Code d'activation",
+        "error" : "Erreur d'activation",
+        "success": "Utilisateur validé, vous devez vous reconnecter."
+    },
+    "Activate": {
+        "title": "Activation du compte",
+        "explain": "Pour utiliser votre espace vous devez activer le compte que avez créer.<br/>Pour cela <strong>saisez ce code d'activation</strong>",
+        "code": "Le code d'activation est: ",
+        "error" : "Erreur d'activation"
+    },
+    "RegistryCredentials": {
+        "title": "Identifiant du registre",
+        "explain": "Si votre serveur distant a des identifiants, ajoutez l'accès au serveur."
+    }
+}

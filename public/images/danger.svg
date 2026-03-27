@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="30"
+   height="30"
+   fill="none"
+   viewBox="0 0 30 30"
+   xmlns="http://www.w3.org/2000/svg">
+
+  <path
+     fillRule="evenodd"
+     d="M 20.966,7.708 22.292,9.034 16.326,15 22.292,20.966 20.966,22.292 15,16.326 9.034,22.292 7.708,20.966 13.674,15 7.708,9.034 9.034,7.708 15,13.674 Z"
+     clip-rule="evenodd"
+     fill="#666666"
+     fill-rule="evenodd"
+     style="fill:#d45252"/>
+</svg>

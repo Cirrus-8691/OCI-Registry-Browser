@@ -1,0 +1,1 @@
+export const ConflictResponse = () => new Response("Conflict", { status: 409 });

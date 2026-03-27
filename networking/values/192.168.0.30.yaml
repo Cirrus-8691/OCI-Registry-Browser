@@ -1,0 +1,48 @@
+# Values from "emoji" webApp
+# running on "http://localhost"
+# with a clusted redis db.
+
+replicaCount: 1
+
+image:
+  repository: localhost:32000/oci-registry-browser
+  # tag: See OCI-RegistryBrowser/package.json
+
+# Backend ENVIRONMENT SETTINGS
+pgHost: "postgresql.oci-registry-browser"
+pgPort: "5432"
+pgName: "internal-registry-browser"
+pgUser: "postgres"
+pgPass: "postgres"
+pgSslMode: "disable"
+
+# REDIS
+redisHost: "redis.oci-registry-browser"
+redisPort: "6379"
+redisDb: "0"
+redisPwd: "this-is-a-sample" # use the right value
+
+logLevel: "INF" # INF, WRN, ERR, SILENCE
+baseApiPath: "/oci-browser" # Warning "/" is mandatory see livenessProbe.httpGet.path:: {{ .Values.baseApiPath }}/api/probes/liveness
+
+jwtSecretKey: "this-is-a-sample" # use the right value
+seedAdminName: "this-is-a-sample" # use the right value
+seedAdminPass: "this-is-a-sample" # use the right value
+
+# ***********************************
+# * ONLY HTTP
+# ***********************************
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+  # https://github.com/kubernetes/ingress-nginx/blob/main/docs/user-guide/nginx-configuration/annotations.md
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/server-tokens: "false"
+
+  hosts:
+    - host: localhost
+      paths:
+        - path: /oci-browser
+          pathType: Prefix
+  tls: []

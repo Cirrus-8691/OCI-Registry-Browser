@@ -1,0 +1,308 @@
+{
+    "Common": {
+        "OK": "Ok",
+        "cancel": "Cancel",
+        "or": "or",
+        "user": "User",
+        "email": "Email address",
+        "desc": "Description",
+        "password": "Password",
+        "passwordPoliciy": "At least eight characters containing [a-z] [A-Z] [0-9] [!@#$%^*]",
+        "profile": "Profile",
+        "name": "Name",
+        "filter": "Search...",
+        "loading": "Loading...",
+        "GoHome": "Home",
+        "apiVersion": "API Version",
+        "unavaible": "Unavailable",
+        "date": "Date",
+        "function": "Function",
+        "type": "Type",
+        "action": "Action",
+        "table": "Table",
+        "itemId": "Identifier",
+        "changes": "Changes",
+        "profiles": {
+            "admin": "Administrator",
+            "user-view": "User, can view",
+            "user-del-tag": "User, can delete images",
+            "user-adm-reg": "User, can modify registry"
+        },
+        "errors": {
+            "identification": "Identification error",
+            "CONNECTION_REFUSED": "This site is inaccessible: {{url}}",
+            "SUCESS_CONNECTION_OK": "This site {{apiVersion}} is accessible: {{url}}",
+            "delete": "Deletion error...",
+            "unavaible": "The information is not available"
+        }
+    },
+    "FlyingAlert": {
+        "danger": "Error",
+        "warning": "Warning",
+        "info": "Information",
+        "success": "Ok",
+        "status": {
+            "Unauthorized": "You must reconnect!",
+            "Forbidden": "The user does not have rights",
+            "Conflict": "An element with the same name already exists",
+            "InternalServerError": "Internal error"
+        }
+    },
+    "DialogAbout": {
+        "licence": "License"
+    },
+    "DialogGtu": {
+        "gtu": "Terms of Use"
+    },
+    "ForgottenPassword": {
+        "discalmer": "What a bad idea {{email}}, losing your password!",
+        "toChangePassword": "To change your password, please log in",
+        "createNewRegistry": "create a new space for your Registry.",
+        "connectWithPassword": "Log in with password",
+        "sendEmail": "Send email"
+    },
+    "Login": {
+        "toAccesWorkspace": "To access your space, please log in",
+        "createNewRegistry": "create a new space for your Registry.",
+        "forgottenPassword": "Forgot your password?",
+        "connect": "Log in",
+        "logout": "Log out",
+        "signedAs": "Signed in as:",
+        "profile": "Profile:",
+        "manageUsers": "User management"
+    },
+    "NewRegistry": {
+        "alreadyAnAccount": "You already have an account?",
+        "connectYourself": "Log in",
+        "createNewRegistry": "Create a new space for your Registry",
+        "newUser": "New user",
+        "iAgree": "I agree to the",
+        "gtu": "Terms of Use",
+        "createRegistry": "Create a new Registry",
+        "ociRegistry": "OCI Registry",
+        "registryName": "Registry name",
+        "registryUrl": "Registry URL",
+        "userName": "Username"
+    },
+    "RegistryEntity": {
+        "ociRegistry": "OCI Registry",
+        "registry": {
+            "name": "Name",
+            "namePoliciy": "[a-z, 0-9 ] or '-', must start and end with [a-z]",
+            "type": "Type",
+            "url": "Web service URL",
+            "gnUrl": "General network URL",
+            "iconUrl": "URL of an icon",
+            "path": "Path (optional)",
+            "excludePaths": "Paths to exclude (optional)",
+            "timeout": "Timeout in ms",
+            "user": "Registry access identifier (optional)",
+            "checkUrl": "Test"
+        }
+    },
+    "LanguageSelect": {
+        "title": "Application language",
+        "de": "German",
+        "en": "English",
+        "es": "Spanish",
+        "fr": "French",
+        "it": "Italian"
+    },
+    "Home": {
+        "title": "Registry list",
+        "registry": {
+            "name": "Name",
+            "type": "Type",
+            "url": "Web service URL",
+            "path": "Path",
+            "user": "User name",
+            "details": "Details",
+            "checkUrl": "Test URL",
+            "edit": "Edit",
+            "upload": "Upload an image",
+            "clone": "Clone registry",
+            "delete": "Delete registry"
+        }
+    },
+    "Registry": {
+        "title": "Catalog",
+        "excludePaths": "Exclude",
+        "tags": "Tags",
+        "url": "URL",
+        "checkUrl": "Test URL",
+        "type": "Type",
+        "update": "Update parameters",
+        "refresh": "Refresh catalog"
+    },
+    "CreateRegistry": {
+        "title": "Add registry"
+    },
+    "EditRegistry": {
+        "title": "Edit repository"
+    },
+    "Repository": {
+        "title": "Repository",
+        "config": "Configuration",
+        "path": "Path",
+        "tag": "Tag",
+        "checkSignature": "Signature",
+        "howToDownload": "Download image",
+        "howToRun": "Run",
+        "manifest": "Inspect manifest",
+        "delete": "Delete image",
+        "refresh": "Refresh repository image list",
+        "contentDigest": "Digest",
+        "type": "Content type",
+        "description": "Description",
+        "architecture": "Architecture",
+        "os": "OS",
+        "size": "Size",
+        "rating": "Rating",
+        "created": "Created on",
+        "signature": "Signature",
+        "fromImage": "Source image",
+        "licenses": "Licenses",
+        "length": "Length"
+    },
+    "EditRepository": {
+        "title": "Edit repository"
+    },
+    "DialogManifest": {
+        "title": "Image manifest",
+        "contentType": "Content type",
+        "digest": "Digest",
+        "schemaVersion": "Schema version",
+        "configTag": "Tag",
+        "architecture": "Architecture",
+        "configMediaType": "Configuration type"
+    },
+    "DialogImageSupport": {
+        "path": "Path (optional)",
+        "image": "Directory name",
+        "tag": "Tag"
+    },
+    "DialogCheckSignature": {
+        "title": "Check image signature",
+        "docker-login": "Docker login",
+        "docker-pull": "Upload image while checking",
+        "docker-trust": "Validate image signature",
+        "cosign-login": "Cosign login",
+        "cosign-verify": "Verify image signature"
+    },
+    "DialogPullImage": {
+        "title": "Download image",
+        "docker-login": "Docker login",
+        "docker": "Download this image with Docker:",
+        "kubectl": "Deploy this image with kubectl under Kubernetes:",
+        "kubectl-values": "values.yaml file",
+        "curl-catalog": "Explore registry catalog with curl",
+        "curl-tags": "View repository tags",
+        "helm-login": "Helm repo login",
+        "helm": "Deploy this chart with Helm",
+        "helm-values": "values.yaml file"
+    },
+    "DialogPushImage": {
+        "title": "Upload image",
+        "docker-login": "Docker login",
+        "docker": "Upload an image with Docker",
+        "helm-login": "Helm repo login",
+        "helm": "Upload a chart with Helm",
+        "helm-values": "values.yaml file"
+    },
+    "DialogRunImage": {
+        "title": "Interactive image execution",
+        "docker-login": "Docker login",
+        "docker-pull": "Upload image",
+        "docker-run": "Interactive execution by starting the image shell"
+    },
+    "Tag": {
+        "docker": {
+            "tag": "image",
+            "the_tag": "the image"
+        },
+        "helm": {
+            "tag": "chart",
+            "the_tag": "the chart"
+        },
+        "oci": {
+            "tag": "tag",
+            "the_tag": "the tag"
+        }
+    },
+    "ConfirmDeleteTag": {
+        "title": "<strong>Are you sure you want to delete {{the_tag}}?</strong><br/><br/>Warning, {{the_tag}} will be permanently deleted from the registry by its website service.",
+        "tag": "Confirm deletion of {{this_tag}}, by entering <strong>{{tag_name}}</strong>"
+    },
+    "ConfirmDeleteRegistry": {
+        "title": "<strong>Are you sure you want to delete the registry?</strong><br/><br/>Only its presence in the user's registry list will be deleted, the service website is not affected.",
+        "registry": "Confirm deletion of the {{type}} registry <i>{{url}}</i>, by entering <strong>{{name}}</strong>"
+    },
+    "Account": {
+        "edit": "Edit account",
+        "changePassword": "Change password",
+        "delete": "Delete account"
+    },
+    "User": {
+        "title": "User management",
+        "create": "Create new user",
+        "edit": "Edit user",
+        "delete": "Delete user",
+        "registries": "Registries",
+        "me": "<i>( me )</i>"
+    },
+    "Trace": {
+        "title": "Action history",
+        "detail": "Change details"
+    },
+    "ConfirmDeleteUser": {
+        "title": "<strong>Delete user by forgetting their email?</strong><br/><br/>The trace of actions performed by the user are preserved but their author can no longer be identified.<br/>Recreating a new account with the same email will not allow them to be retrieved.",
+        "email": "Confirm account deletion by entering <strong>{{email}}</strong>"
+    },
+    "EditUser": {
+        "title": "Edit user information"
+    },
+    "CreateUser": {
+        "title": "Create new user"
+    },
+    "UserForm": {
+        "newPassword": "New password",
+        "awaitChangePassword": "The user must change password"
+    },
+    "ConfirmForgetMe": {
+        "title": "<strong>Delete your account by forgetting your email?</strong><br/><br/>The registries and trace of actions you performed are preserved but their author can no longer be identified.<br/>Recreating a new account with the same email will not allow them to be retrieved.",
+        "email": "Confirm deletion of your account by entering <strong>{{email}}</strong>"
+    },
+    "UserRegisty": {
+        "title": "User registries: {{email}}",
+        "remove": "Remove access",
+        "add": "Add registry",
+        "cannotDeleteAll": "Do not delete all accesses. Delete the user",
+        "noRight": "Unauthorized"
+    },
+    "Signup": {
+        "success": "New space created, you must connect with {{email}}"
+    },
+    "ChangePassword": {
+        "title": "New password",
+        "explain": "To validate your account usage <br/> you must enter a <strong>new password.</strong>.",
+        "error": "You must enter a new password",
+        "success": "User validated, you must reconnect."
+    },
+    "AwaitActivation": {
+        "title": "Account activation",
+        "explain": "To use your space you must activate the account you created.<br/>To do this <strong>scan the QrCode</strong>, below, with your smartphone.<br/> Then, <strong>enter the activation code</strong> that it will display below.",
+        "code": "Activation code",
+        "error": "Activation error",
+        "success": "User validated, you must reconnect."
+    },
+    "Activate": {
+        "title": "Account activation",
+        "explain": "To use your space you must activate the account you created.<br/>To do this <strong>enter this activation code</strong>",
+        "code": "The activation code is: ",
+        "error": "Activation error"
+    },
+    "RegistryCredentials": {
+        "title": "Registry identifier",
+        "explain": "If your remote server has credentials, add server access."
+    }
+}

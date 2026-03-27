@@ -1,2 +1,32 @@
-# OCI-Registry-Browser
-OCI container registry web browser
+# OCI-RegistryBrowser
+OCI Registry container Browser.
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+Using [react-bootstrap](https://react-bootstrap.netlify.app/).
+
+
+#####
+http://10.1.147.47:80/oci-browser/api/probes/liveness"
+   ▲ Next.js 15.4.5
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+ ✓ Starting...
+ ✓ Ready in 102ms
+#####
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

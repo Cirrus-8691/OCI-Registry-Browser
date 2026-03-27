@@ -1,0 +1,1 @@
+export const ForbiddenResponse = () => new Response("Forbidden", { status: 403 });

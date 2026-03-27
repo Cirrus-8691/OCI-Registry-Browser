@@ -1,0 +1,1 @@
+export const BadRequestResponse = () => new Response("Unavailable", { status: 400 });

@@ -1,0 +1,105 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+underline=$(tput smul)
+red=$(tput setaf 1)
+blue=$(tput setaf 4)
+white=$(tput setaf 7)
+###############################################################
+PACKAGE="oci-registry-browser"
+BUILD_IMAGE="false"
+###############################################################
+echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo "┃ ☸️   Deploy $PACKAGE repository      ┃"
+echo "┠──────────────────────────────────┨"
+if ! [ $USER == "root" ]; then
+  echo "$red┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo "$red┃$white 🔥 FATAL ERROR: USER is not root"
+  echo "$red┠────────────────────────────────────────────"
+  echo "$red┃$white  👤 USER is $red$USER$normal"
+  echo "$red┃$white  💲 Run ${blue}sudo $0 $1$normal"
+  echo "$red┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  exit 1
+fi
+###############################################################
+if [ $# -lt 1 ]; then
+  echo "$red┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo "$red┃$white 🔥FATAL ERROR: No arguments supplied for environment ${bold}[ip-server]${normal}"
+  echo "$red┠────────────────────────────────────────────"
+  echo "$red┃$white $ sudo ./deploy.sh ${bold}192.168.0.30${normal}"
+  echo "$red┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  ls networking/values
+  exit 1
+fi
+IP_SERVER=$1
+if [ $# -eq 2 ]; then
+  BUILD_IMAGE=$2
+fi
+echo "┃ 📌🖥️  Expecting server IP: $blue$bold$IP_SERVER$white$normal"
+echo "┠──────────────────────────────────"
+###############################################################
+VALUES_FILE="networking/values/$IP_SERVER.yaml"
+if ! [ -f $ENV_FILE ]; then
+  echo "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
+  echo "🔥FATAL ERROR: 🔴 $VALUES_FILE doesn'n exist! "
+  echo "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
+  ls networking/values/*.yaml
+  exit 1
+fi
+###############################################################
+#  Build Docker image with NEXT_PUBLIC_ environment settings  #
+###############################################################
+if [ "$BUILD_IMAGE" == "true" ]; then
+  ./buildImage.sh $IP_SERVER
+  if ! [ $? -eq 0 ]; then exit 1; fi
+fi
+###############################################################
+NAMESPACE=$PACKAGE
+NAMESPACE_FOUND=$(microk8s kubectl get namespace $NAMESPACE --ignore-not-found | grep $NAMESPACE )
+if [[ "$NAMESPACE_FOUND" == *"$NAMESPACE"* ]]; then
+  echo "🟢  Namespace $NAMESPACE already exist"
+else
+  echo "✨  Create Namespace "$NAMESPACE
+  microk8s kubectl create ns $NAMESPACE
+  if ! [ $? -eq 0 ]; then
+    echo "${red}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo "┃${white} 🔥FATAL ERROR: Installing $PACKAGE_NAME ${bold}${underline}Namespace${normal} "
+    echo "${red}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${white}"
+    exit 1
+  fi
+fi
+###############################################################
+CHART=$PACKAGE
+echo ""
+echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "┃ 🐋 Install $bold $CHART $normal Helm chart"
+echo "┃────────────────────────────────────────────"
+echo "┃ ✳️  In namespace "$1
+echo "┃ ✳️  Using helm parameter: '$PARAMETERES'"
+echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+################################################
+echo ""
+echo "♻️  Uninstall $CHART " 
+microk8s helm -n $NAMESPACE uninstall $CHART
+
+echo "✨  Install $CHART"
+################################################
+REGISTERY_URI="localhost:32000"
+IMAGE_VERSION=$(jq -r '.version' package.json) # Read version form package.json
+################################################ 
+microk8s helm -n $NAMESPACE install --plain-http $CHART oci://$REGISTERY_URI/helm-chart/$CHART -f $VALUES_FILE --set image.tag=$IMAGE_VERSION
+if ! [ $? -eq 0 ]; then
+  echo "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
+  echo "🔥$white 🔥FATAL ERROR: Cannot install Helm chart $bold $CHART $normal "
+  echo "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
+  exit 1
+fi
+echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo "┃ 😀    emoji  Helm repository     ┃"
+echo "┠──────────────────────────────────┨"
+echo "┃ ✅ ${blue}${bold}$CHART${normal}"
+echo "┠──────────────────────────────────┨"
+echo "┃ ☑️  ${blue}${bold}docker system prune --volumes${normal}"
+echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+
+exit 0

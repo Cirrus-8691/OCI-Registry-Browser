@@ -1,0 +1,308 @@
+{
+    "Common": {
+        "OK": "Ok",
+        "cancel": "Cancelar",
+        "or": "o",
+        "user": "Usuario",
+        "email": "Dirección de correo electrónico",
+        "desc": "Descripción",
+        "password": "Contraseña",
+        "passwordPoliciy": "Al menos ocho caracteres que contengan [a-z] [A-Z] [0-9] [!@#$%^*]",
+        "profile": "Perfil",
+        "name": "Nombre",
+        "filter": "Buscar...",
+        "loading": "Cargando...",
+        "GoHome": "Inicio",
+        "apiVersion": "Versión de API",
+        "unavaible": "No disponible",
+        "date": "Fecha",
+        "function": "Función",
+        "type": "Tipo",
+        "action": "Acción",
+        "table": "Tabla",
+        "itemId": "Identificador",
+        "changes": "Modificaciones",
+        "profiles": {
+            "admin": "Administrador",
+            "user-view": "Usuario, puede ver",
+            "user-del-tag": "Usuario, puede eliminar imágenes",
+            "user-adm-reg": "Usuario, puede modificar registro"
+        },
+        "errors": {
+            "identification": "Error de identificación",
+            "CONNECTION_REFUSED": "Este sitio es inaccesible: {{url}}",
+            "SUCESS_CONNECTION_OK": "Este sitio {{apiVersion}} es accesible: {{url}}",
+            "delete": "Error de eliminación...",
+            "unavaible": "La información no está disponible"
+        }
+    },
+    "FlyingAlert": {
+        "danger": "Error",
+        "warning": "Atención",
+        "info": "Información",
+        "success": "Ok",
+        "status": {
+            "Unauthorized": "¡Debes volver a conectarte!",
+            "Forbidden": "El usuario no tiene los derechos",
+            "Conflict": "Ya existe un elemento con el mismo nombre",
+            "InternalServerError": "Error interno"
+        }
+    },
+    "DialogAbout": {
+        "licence": "Licencia"
+    },
+    "DialogGtu": {
+        "gtu": "Condiciones generales de uso"
+    },
+    "ForgottenPassword": {
+        "discalmer": "¡Qué mala idea, {{email}}, perder tu contraseña!",
+        "toChangePassword": "Para cambiar tu contraseña, por favor, inicia sesión",
+        "createNewRegistry": "crea un nuevo espacio para tu Registro.",
+        "connectWithPassword": "Iniciar sesión con contraseña",
+        "sendEmail": "Enviar un correo electrónico"
+    },
+    "Login": {
+        "toAccesWorkspace": "Para acceder a tu espacio, por favor, inicia sesión",
+        "createNewRegistry": "crea un nuevo espacio para tu Registro.",
+        "forgottenPassword": "¿Has olvidado tu contraseña?",
+        "connect": "Iniciar sesión",
+        "logout": "Cerrar sesión",
+        "signedAs": "Conectado como:",
+        "profile": "Perfil:",
+        "manageUsers": "Gestión de usuarios"
+    },
+    "NewRegistry": {
+        "alreadyAnAccount": "¿Ya tienes una cuenta?",
+        "connectYourself": "Inicia sesión",
+        "createNewRegistry": "Crea un nuevo espacio para tu Registro",
+        "newUser": "Nuevo usuario",
+        "iAgree": "Acepto las",
+        "gtu": "condiciones generales de uso",
+        "createRegistry": "Crear un nuevo Registro",
+        "ociRegistry": "Registro OCI",
+        "registryName": "Nombre del Registro",
+        "registryUrl": "URL del Registro",
+        "userName": "Nombre de usuario"
+    },
+    "RegistryEntity": {
+        "ociRegistry": "Registro OCI",
+        "registry": {
+            "name": "Nombre",
+            "namePoliciy": "[a-z, 0-9 ] o '-', debe comenzar y terminar con [a-z]",
+            "type": "Tipo",
+            "url": "URL del servicio web",
+            "gnUrl": "URL de red general",
+            "iconUrl": "URL de un icono",
+            "path": "Ruta (opcional)",
+            "excludePaths": "Rutas a excluir (opcional)",
+            "timeout": "Espera en ms",
+            "user": "Identificador de acceso al registro (opcional)",
+            "checkUrl": "Probar"
+        }
+    },
+    "LanguageSelect": {
+        "title": "Idioma de la aplicación",
+        "de": "Alemán",
+        "en": "Inglés",
+        "es": "Español",
+        "fr": "Francés",
+        "it": "Italiano"
+    },
+    "Home": {
+        "title": "Lista de registros",
+        "registry": {
+            "name": "Nombre",
+            "type": "Tipo",
+            "url": "URL del servicio web",
+            "path": "Ruta",
+            "user": "Nombre del usuario",
+            "details": "Detalles",
+            "checkUrl": "Probar URL",
+            "edit": "Modificar",
+            "upload": "Agregar una imagen",
+            "clone": "Copiar registro",
+            "delete": "Eliminar registro"
+        }
+    },
+    "Registry": {
+        "title": "Catálogo",
+        "excludePaths": "Excluir",
+        "tags": "Etiquetas",
+        "url": "URL",
+        "checkUrl": "Probar URL",
+        "type": "Tipo",
+        "update": "Modificar parámetros",
+        "refresh": "Actualizar catálogo"
+    },
+    "CreateRegistry": {
+        "title": "Agregar registro"
+    },
+    "EditRegistry": {
+        "title": "Modificar depósito"
+    },
+    "Repository": {
+        "title": "Depósito",
+        "config": "Configuración",
+        "path": "Ruta",
+        "tag": "Etiqueta",
+        "checkSignature": "Firma",
+        "howToDownload": "Descargar imagen",
+        "howToRun": "Ejecutar",
+        "manifest": "Inspeccionar manifest",
+        "delete": "Eliminar imagen",
+        "refresh": "Actualizar lista de imágenes del depósito",
+        "contentDigest": "Digest",
+        "type": "Tipo de contenido",
+        "description": "Descripción",
+        "architecture": "Arquitectura",
+        "os": "SO",
+        "size": "Tamaño",
+        "rating": "Calificación",
+        "created": "Creado el",
+        "signature": "Firma",
+        "fromImage": "Imagen fuente",
+        "licenses": "Licencias",
+        "length": "Longitud"
+    },
+    "EditRepository": {
+        "title": "Modificar depósito"
+    },
+    "DialogManifest": {
+        "title": "Manifest de la imagen",
+        "contentType": "Tipo de contenido",
+        "digest": "Digest",
+        "schemaVersion": "Versión de esquema",
+        "configTag": "Etiqueta",
+        "architecture": "Arquitectura",
+        "configMediaType": "Tipo de configuración"
+    },
+    "DialogImageSupport": {
+        "path": "Ruta (opcional)",
+        "image": "Nombre del directorio",
+        "tag": "Etiqueta"
+    },
+    "DialogCheckSignature": {
+        "title": "Verificar firma de la imagen",
+        "docker-login": "Acceso Docker",
+        "docker-pull": "Cargar imagen verificándola",
+        "docker-trust": "Validar firma de la imagen",
+        "cosign-login": "Acceso Cosign",
+        "cosign-verify": "Verificar firma de la imagen"
+    },
+    "DialogPullImage": {
+        "title": "Descargar imagen",
+        "docker-login": "Acceso Docker",
+        "docker": "Descargar esta imagen con Docker :",
+        "kubectl": "Implementar esta imagen con kubectl en Kubernetes :",
+        "kubectl-values": "Archivo values.yaml",
+        "curl-catalog": "Explorar catálogo del registro con curl",
+        "curl-tags": "Visualizar etiquetas del repositorio",
+        "helm-login": "Acceso al repo Helm",
+        "helm": "Implementar este chart con Helm",
+        "helm-values": "Archivo values.yaml"
+    },
+    "DialogPushImage": {
+        "title": "Agregar imagen",
+        "docker-login": "Acceso Docker",
+        "docker": "Cargar una imagen con Docker",
+        "helm-login": "Acceso al repo Helm",
+        "helm": "Cargar un chart con Helm",
+        "helm-values": "Archivo values.yaml"
+    },
+    "DialogRunImage": {
+        "title": "Ejecución interactiva de la imagen",
+        "docker-login": "Acceso Docker",
+        "docker-pull": "Cargar imagen",
+        "docker-run": "Ejecución interactiva iniciando el shell de la imagen"
+    },
+    "Tag": {
+        "docker": {
+            "tag": "imagen",
+            "the_tag": "la imagen"
+        },
+        "helm": {
+            "tag": "chart",
+            "the_tag": "el chart"
+        },
+        "oci": {
+            "tag": "etiqueta",
+            "the_tag": "la etiqueta"
+        }
+    },
+    "ConfirmDeleteTag": {
+        "title": "<strong>¿Estás seguro de que quieres eliminar {{the_tag}} ?</strong><br/><br/>Atención, {{the_tag}} será definitivamente eliminada del registro por el servicio de su sitio web.",
+        "tag": "Confirma la eliminación de {{this_tag}}, introduciendo <strong>{{tag_name}}</strong>"
+    },
+    "ConfirmDeleteRegistry": {
+        "title": "<strong>¿Estás seguro de que quieres eliminar el registro ?</strong><br/><br/>Solo su presencia en la lista de registros del usuario será eliminada, el sitio web del servicio no se ve afectado.",
+        "registry": "Confirma la eliminación del registro {{type}} <i>{{url}}</i>, introduciendo <strong>{{name}}</strong>"
+    },
+    "Account": {
+        "edit": "Modificar cuenta",
+        "changePassword": "Cambiar contraseña",
+        "delete": "Eliminar cuenta"
+    },
+    "User": {
+        "title": "Gestión de usuarios",
+        "create": "Crear nuevo usuario",
+        "edit": "Modificar usuario",
+        "delete": "Eliminar usuario",
+        "registries": "Registros",
+        "me": "<i>( yo )</i>"
+    },
+    "Trace": {
+        "title": "Historial de acciones",
+        "detail": "Detalles de las modificaciones"
+    },
+    "ConfirmDeleteUser": {
+        "title": "<strong>¿Eliminar el usuario olvidando su email ?</strong><br/><br/>La huella de las acciones realizadas por el usuario se conserva pero ya no se puede identificar al autor.<br/>Volver a crear una nueva cuenta con el mismo email no permitirá recuperarlas.",
+        "email": "Confirma la eliminación de la cuenta introduciendo <strong>{{email}}</strong>"
+    },
+    "EditUser": {
+        "title": "Modificar información del usuario"
+    },
+    "CreateUser": {
+        "title": "Crear nuevo usuario"
+    },
+    "UserForm": {
+        "newPassword": "Nueva contraseña",
+        "awaitChangePassword": "El usuario debe cambiar la contraseña"
+    },
+    "ConfirmForgetMe": {
+        "title": "<strong>¿Eliminar tu cuenta olvidando el email ?</strong><br/><br/>Los registros y la huella de las acciones que has realizado se conservan pero ya no se puede identificar al autor.<br/>Volver a crear una nueva cuenta con el mismo email no permitirá recuperarlas.",
+        "email": "Confirma la eliminación de tu cuenta introduciendo <strong>{{email}}</strong>"
+    },
+    "UserRegisty": {
+        "title": "Registros del usuario : {{email}}",
+        "remove": "Eliminar acceso",
+        "add": "Agregar registro",
+        "cannotDeleteAll": "No elimines todos los accesos. Elimina el usuario",
+        "noRight": "No autorizado"
+    },
+    "Signup": {
+        "success": "Nuevo espacio creado, debes conectarte con {{email}}"
+    },
+    "ChangePassword": {
+        "title": "Nueva contraseña",
+        "explain": "Para validar el uso de tu cuenta <br/> debes introducir una <strong>nueva contraseña.</strong>.",
+        "error": "Debes introducir una nueva contraseña",
+        "success": "Usuario validado, debes volver a conectarte."
+    },
+    "AwaitActivation": {
+        "title": "Activación de cuenta",
+        "explain": "Para utilizar tu espacio debes activar la cuenta que has creado.<br/>Para ello <strong>escanea el QrCode</strong>, abajo, con tu smartphone.<br/> Después, <strong>introduce el código de activación</strong> que mostrará debajo.",
+        "code": "Código de activación",
+        "error": "Error de activación",
+        "success": "Usuario validado, debes volver a conectarte."
+    },
+    "Activate": {
+        "title": "Activación de cuenta",
+        "explain": "Para utilizar tu espacio debes activar la cuenta que has creado.<br/>Para ello <strong>introduce este código de activación</strong>",
+        "code": "El código de activación es: ",
+        "error": "Error de activación"
+    },
+    "RegistryCredentials": {
+        "title": "Identificador del registro",
+        "explain": "Si tu servidor remoto tiene credenciales, agrega el acceso al servidor."
+    }
+}

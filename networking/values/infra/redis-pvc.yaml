@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-pvc
+  labels:
+    app: redis
+spec:
+  # Doit correspondre au nom de la StorageClass installée dans votre cluster (ici "nfs-csi")
+  storageClassName: nfs-csi
+  accessModes:
+    # ReadWriteOnce est suffisant pour un Deployment de réplica unique comme le master
+    - ReadWriteOnce
+  resources:
+    requests:
+      # Demande d'un espace de stockage de 1 Gigabyte
+      storage: 1Gi

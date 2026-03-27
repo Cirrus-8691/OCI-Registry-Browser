@@ -1,0 +1,308 @@
+{
+    "Common": {
+        "OK": "Ok",
+        "cancel": "Abbrechen",
+        "or": "oder",
+        "user": "Benutzer",
+        "email": "E-Mail-Adresse",
+        "desc": "Beschreibung",
+        "password": "Passwort",
+        "passwordPoliciy": "Mindestens acht Zeichen enthaltend [a-z] [A-Z] [0-9] [!@#$%^*]",
+        "profile": "Profil",
+        "name": "Name",
+        "filter": "Suchen...",
+        "loading": "Laden...",
+        "GoHome": "Startseite",
+        "apiVersion": "API-Version",
+        "unavaible": "Nicht verfügbar",
+        "date": "Datum",
+        "function": "Funktion",
+        "type": "Typ",
+        "action": "Aktion",
+        "table": "Tabelle",
+        "itemId": "Kennung",
+        "changes": "Änderungen",
+        "profiles": {
+            "admin": "Administrator",
+            "user-view": "Benutzer, kann ansehen",
+            "user-del-tag": "Benutzer, kann Bilder löschen",
+            "user-adm-reg": "Benutzer, kann Registry ändern"
+        },
+        "errors": {
+            "identification": "Identifizierungsfehler",
+            "CONNECTION_REFUSED": "Diese Seite ist nicht zugänglich: {{url}}",
+            "SUCESS_CONNECTION_OK": "Diese Seite {{apiVersion}} ist zugänglich: {{url}}",
+            "delete": "Löschfehler...",
+            "unavaible": "Die Information ist nicht verfügbar"
+        }
+    },
+    "FlyingAlert": {
+        "danger": "Fehler",
+        "warning": "Warnung",
+        "info": "Information",
+        "success": "Ok",
+        "status": {
+            "Unauthorized": "Sie müssen sich erneut anmelden!",
+            "Forbidden": "Der Benutzer hat keine Rechte",
+            "Conflict": "Ein Element mit dem gleichen Namen existiert bereits",
+            "InternalServerError": "Interner Fehler"
+        }
+    },
+    "DialogAbout": {
+        "licence": "Lizenz"
+    },
+    "DialogGtu": {
+        "gtu": "Allgemeine Geschäftsbedingungen"
+    },
+    "ForgottenPassword": {
+        "discalmer": "Was für eine schlechte Idee, {{email}}, Ihr Passwort zu verlieren!",
+        "toChangePassword": "Um Ihr Passwort zu ändern, melden Sie sich bitte an",
+        "createNewRegistry": "erstellen Sie einen neuen Bereich für Ihr Register.",
+        "connectWithPassword": "Mit Passwort anmelden",
+        "sendEmail": "E-Mail senden"
+    },
+    "Login": {
+        "toAccesWorkspace": "Um auf Ihren Bereich zuzugreifen, melden Sie sich bitte an",
+        "createNewRegistry": "erstellen Sie einen neuen Bereich für Ihr Register.",
+        "forgottenPassword": "Passwort vergessen?",
+        "connect": "Anmelden",
+        "logout": "Abmelden",
+        "signedAs": "Angemeldet als:",
+        "profile": "Profil:",
+        "manageUsers": "Benutzerverwaltung"
+    },
+    "NewRegistry": {
+        "alreadyAnAccount": "Haben Sie bereits ein Konto?",
+        "connectYourself": "Melden Sie sich an",
+        "createNewRegistry": "Erstellen Sie einen neuen Bereich für Ihr Register",
+        "newUser": "Neuer Benutzer",
+        "iAgree": "Ich stimme den",
+        "gtu": "Allgemeinen Geschäftsbedingungen",
+        "createRegistry": "Neue Registry erstellen",
+        "ociRegistry": "OCI-Registry",
+        "registryName": "Name der Registry",
+        "registryUrl": "URL der Registry",
+        "userName": "Benutzername"
+    },
+    "RegistryEntity": {
+        "ociRegistry": "OCI-Registry",
+        "registry": {
+            "name": "Name",
+            "namePoliciy": "[a-z, 0-9 ] oder '-', muss mit [a-z] beginnen und enden",
+            "type": "Typ",
+            "url": "Webdienst-URL",
+            "gnUrl": "Allgemeine Netzwerk-URL",
+            "iconUrl": "URL eines Icons",
+            "path": "Pfad (optional)",
+            "excludePaths": "Auszuschließende Pfade (optional)",
+            "timeout": "Timeout in ms",
+            "user": "Registry-Zugangskennung (optional)",
+            "checkUrl": "Testen"
+        }
+    },
+    "LanguageSelect": {
+        "title": "Sprache der Anwendung",
+        "de": "Deutsch",
+        "en": "Englisch",
+        "es": "Spanisch",
+        "fr": "Französisch",
+        "it": "Italienisch"
+    },
+    "Home": {
+        "title": "Registry-Liste",
+        "registry": {
+            "name": "Name",
+            "type": "Typ",
+            "url": "Webdienst-URL",
+            "path": "Pfad",
+            "user": "Benutzername",
+            "details": "Details",
+            "checkUrl": "URL testen",
+            "edit": "Bearbeiten",
+            "upload": "Bild hochladen",
+            "clone": "Registry klonen",
+            "delete": "Registry löschen"
+        }
+    },
+    "Registry": {
+        "title": "Katalog",
+        "excludePaths": "Ausschließen",
+        "tags": "Tags",
+        "url": "URL",
+        "checkUrl": "URL testen",
+        "type": "Typ",
+        "update": "Parameter aktualisieren",
+        "refresh": "Katalog aktualisieren"
+    },
+    "CreateRegistry": {
+        "title": "Registry hinzufügen"
+    },
+    "EditRegistry": {
+        "title": "Repository bearbeiten"
+    },
+    "Repository": {
+        "title": "Repository",
+        "config": "Konfiguration",
+        "path": "Pfad",
+        "tag": "Tag",
+        "checkSignature": "Signatur",
+        "howToDownload": "Bild herunterladen",
+        "howToRun": "Ausführen",
+        "manifest": "Manifest inspizieren",
+        "delete": "Bild löschen",
+        "refresh": "Repository-Bildliste aktualisieren",
+        "contentDigest": "Digest",
+        "type": "Inhaltstyp",
+        "description": "Beschreibung",
+        "architecture": "Architektur",
+        "os": "OS",
+        "size": "Größe",
+        "rating": "Bewertung",
+        "created": "Erstellt am",
+        "signature": "Signatur",
+        "fromImage": "Quellbild",
+        "licenses": "Lizenzen",
+        "length": "Länge"
+    },
+    "EditRepository": {
+        "title": "Repository bearbeiten"
+    },
+    "DialogManifest": {
+        "title": "Bild-Manifest",
+        "contentType": "Inhaltstyp",
+        "digest": "Digest",
+        "schemaVersion": "Schema-Version",
+        "configTag": "Tag",
+        "architecture": "Architektur",
+        "configMediaType": "Konfigurationstyp"
+    },
+    "DialogImageSupport": {
+        "path": "Pfad (optional)",
+        "image": "Verzeichnisname",
+        "tag": "Tag"
+    },
+    "DialogCheckSignature": {
+        "title": "Bildsignatur überprüfen",
+        "docker-login": "Docker-Anmeldung",
+        "docker-pull": "Bild beim Überprüfen hochladen",
+        "docker-trust": "Bildsignatur validieren",
+        "cosign-login": "Cosign-Anmeldung",
+        "cosign-verify": "Bildsignatur verifizieren"
+    },
+    "DialogPullImage": {
+        "title": "Bild herunterladen",
+        "docker-login": "Docker-Anmeldung",
+        "docker": "Dieses Bild mit Docker herunterladen:",
+        "kubectl": "Dieses Bild mit kubectl unter Kubernetes bereitstellen:",
+        "kubectl-values": "values.yaml-Datei",
+        "curl-catalog": "Registry-Katalog mit curl erkunden",
+        "curl-tags": "Repository-Tags anzeigen",
+        "helm-login": "Helm-Repo-Anmeldung",
+        "helm": "Dieses Chart mit Helm bereitstellen",
+        "helm-values": "values.yaml-Datei"
+    },
+    "DialogPushImage": {
+        "title": "Bild hochladen",
+        "docker-login": "Docker-Anmeldung",
+        "docker": "Ein Bild mit Docker hochladen",
+        "helm-login": "Helm-Repo-Anmeldung",
+        "helm": "Ein Chart mit Helm hochladen",
+        "helm-values": "values.yaml-Datei"
+    },
+    "DialogRunImage": {
+        "title": "Interaktive Bildausführung",
+        "docker-login": "Docker-Anmeldung",
+        "docker-pull": "Bild hochladen",
+        "docker-run": "Interaktive Ausführung durch Starten der Bild-Shell"
+    },
+    "Tag": {
+        "docker": {
+            "tag": "Bild",
+            "the_tag": "das Bild"
+        },
+        "helm": {
+            "tag": "Chart",
+            "the_tag": "das Chart"
+        },
+        "oci": {
+            "tag": "Tag",
+            "the_tag": "der Tag"
+        }
+    },
+    "ConfirmDeleteTag": {
+        "title": "<strong>Sind Sie sicher, dass Sie {{the_tag}} löschen möchten?</strong><br/><br/>Warnung, {{the_tag}} wird dauerhaft von der Registry durch deren Website-Service gelöscht.",
+        "tag": "Löschen von {{this_tag}} bestätigen, indem Sie <strong>{{tag_name}}</strong> eingeben"
+    },
+    "ConfirmDeleteRegistry": {
+        "title": "<strong>Sind Sie sicher, dass Sie die Registry löschen möchten?</strong><br/><br/>Nur deren Präsenz in der Registry-Liste des Benutzers wird gelöscht, die Service-Website ist nicht betroffen.",
+        "registry": "Löschen der {{type}}-Registry <i>{{url}}</i> bestätigen, indem Sie <strong>{{name}}</strong> eingeben"
+    },
+    "Account": {
+        "edit": "Konto bearbeiten",
+        "changePassword": "Passwort ändern",
+        "delete": "Konto löschen"
+    },
+    "User": {
+        "title": "Benutzerverwaltung",
+        "create": "Neuen Benutzer erstellen",
+        "edit": "Benutzer bearbeiten",
+        "delete": "Benutzer löschen",
+        "registries": "Registries",
+        "me": "<i>( ich )</i>"
+    },
+    "Trace": {
+        "title": "Aktionshistorie",
+        "detail": "Änderungsdetails"
+    },
+    "ConfirmDeleteUser": {
+        "title": "<strong>Benutzer löschen, indem die E-Mail vergessen wird?</strong><br/><br/>Die Spur der vom Benutzer ausgeführten Aktionen wird bewahrt, aber deren Autor kann nicht mehr identifiziert werden.<br/>Eine neue Kontoerstellung mit der gleichen E-Mail ermöglicht nicht deren Wiederherstellung.",
+        "email": "Kontolöschung bestätigen, indem Sie <strong>{{email}}</strong> eingeben"
+    },
+    "EditUser": {
+        "title": "Benutzerinformationen bearbeiten"
+    },
+    "CreateUser": {
+        "title": "Neuen Benutzer erstellen"
+    },
+    "UserForm": {
+        "newPassword": "Neues Passwort",
+        "awaitChangePassword": "Der Benutzer muss das Passwort ändern"
+    },
+    "ConfirmForgetMe": {
+        "title": "<strong>Ihr Konto löschen, indem Ihre E-Mail vergessen wird?</strong><br/><br/>Die Registries und die Spur der von Ihnen ausgeführten Aktionen werden bewahrt, aber deren Autor kann nicht mehr identifiziert werden.<br/>Eine neue Kontoerstellung mit der gleichen E-Mail ermöglicht nicht deren Wiederherstellung.",
+        "email": "Löschung Ihres Kontos bestätigen, indem Sie <strong>{{email}}</strong> eingeben"
+    },
+    "UserRegisty": {
+        "title": "Benutzer-Registries: {{email}}",
+        "remove": "Zugriff entfernen",
+        "add": "Registry hinzufügen",
+        "cannotDeleteAll": "Nicht alle Zugriffe löschen. Den Benutzer löschen",
+        "noRight": "Nicht autorisiert"
+    },
+    "Signup": {
+        "success": "Neuer Bereich erstellt, Sie müssen sich mit {{email}} verbinden"
+    },
+    "ChangePassword": {
+        "title": "Neues Passwort",
+        "explain": "Um Ihre Kontonutzung zu validieren <br/> müssen Sie ein <strong>neues Passwort</strong> eingeben.",
+        "error": "Sie müssen ein neues Passwort eingeben",
+        "success": "Benutzer validiert, Sie müssen sich erneut anmelden."
+    },
+    "AwaitActivation": {
+        "title": "Kontoaktivierung",
+        "explain": "Um Ihren Bereich zu nutzen, müssen Sie das von Ihnen erstellte Konto aktivieren.<br/>Um dies zu tun <strong>scannen Sie den QrCode</strong>, unten, mit Ihrem Smartphone.<br/> Dann <strong>geben Sie den Aktivierungscode</strong> ein, den es unten anzeigen wird.",
+        "code": "Aktivierungscode",
+        "error": "Aktivierungsfehler",
+        "success": "Benutzer validiert, Sie müssen sich erneut anmelden."
+    },
+    "Activate": {
+        "title": "Kontoaktivierung",
+        "explain": "Um Ihren Bereich zu nutzen, müssen Sie das von Ihnen erstellte Konto aktivieren.<br/>Um dies zu tun <strong>geben Sie diesen Aktivierungscode</strong> ein",
+        "code": "Der Aktivierungscode ist: ",
+        "error": "Aktivierungsfehler"
+    },
+    "RegistryCredentials": {
+        "title": "Registry-Kennung",
+        "explain": "Wenn Ihr entfernter Server Anmeldedaten hat, Serverzugriff hinzufügen."
+    }
+}

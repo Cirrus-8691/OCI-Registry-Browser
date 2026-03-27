@@ -1,0 +1,1 @@
+export const NotFoundResponse = () => new Response("NotFound", { status: 404 });
