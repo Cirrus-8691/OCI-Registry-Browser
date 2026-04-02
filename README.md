@@ -5,9 +5,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Using [react-bootstrap](https://react-bootstrap.netlify.app/).
 
-
-#####
-http://10.1.147.47:80/oci-browser/api/probes/liveness"
    ▲ Next.js 15.4.5
    - Local:        http://localhost:3000
    - Network:      http://0.0.0.0:3000
