@@ -1,19 +1,51 @@
 # OCI-RegistryBrowser
-OCI Registry container Browser.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+OCI Registry container web browser.
 
-Using [react-bootstrap](https://react-bootstrap.netlify.app/).
-
-
-#####
-http://10.1.147.47:80/oci-browser/api/probes/liveness"
-   ▲ Next.js 15.4.5
-   - Local:        http://localhost:3000
-   - Network:      http://0.0.0.0:3000
- ✓ Starting...
- ✓ Ready in 102ms
-#####
+<p>
+  <a href="./LICENSE">
+      <img
+        alt="license:MIT"
+        src="https://img.shields.io/badge/License-MIT-blue"
+      />
+  </a>
+  <img
+        alt="Language:TypeScript"
+        src="https://img.shields.io/badge/Language-TypeScript-purple"
+  />
+  <a href="https://nextjs.org/">
+    <img
+        alt="Server:NextJs"
+        src="https://img.shields.io/badge/Server-NextJs-45d298"
+    />
+  </a>
+  <a href="https://fr.reactjs.org/">
+    <img
+        alt="Server:React"
+        src="https://img.shields.io/badge/Front-React-45d300"
+    />
+  </a>
+</p>
+<p>
+  <a href="https://www.docker.com/">
+    <img
+        alt="image:docker"
+        src="https://img.shields.io/badge/Image-Docker-blue"
+    />
+  </a>
+  <a href="https://helm.sh/">
+    <img
+        alt="chart:helm"
+        src="https://img.shields.io/badge/DeploymentChart-Helm-blueviolet"
+    />
+  </a>
+  <a href="https://zotregistry.dev/">
+    <img
+        alt="registry:zot"
+        src="https://img.shields.io/badge/OciRegistry-Zot-45d300"
+    />
+  </a>
+</p>
 
 ## Getting Started
 
